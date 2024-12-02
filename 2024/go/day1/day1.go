@@ -71,8 +71,8 @@ func createListsFromFile(path string) ([]int, []int) {
 
 	scanner := bufio.NewScanner(f)
 
-	list1 := make([]int, 1000) // 1000 because it is guaranteed by input file
-	list2 := make([]int, 1000) // 1000 because it is guaranteed by input file
+	list1 := make([]int, 0)
+	list2 := make([]int, 0)
 
 	for scanner.Scan() {
 		r := strings.Split(scanner.Text(), " ")

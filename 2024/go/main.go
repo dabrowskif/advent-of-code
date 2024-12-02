@@ -6,6 +6,7 @@ import (
 	"strconv"
 
 	"github.com/dabrowskif/advent-of-code/2024/go/day1"
+	"github.com/dabrowskif/advent-of-code/2024/go/day2"
 )
 
 func main() {
@@ -25,5 +26,8 @@ func main() {
 	case 1:
 		fmt.Println(day1.CalculateTotalDistance())
 		fmt.Println(day1.CalculateSimilarityScore())
+	case 2:
+		fmt.Println(day2.CountSafeReports())
+		fmt.Println(day2.CountSafeReportsWithToleration())
 	}
 }
