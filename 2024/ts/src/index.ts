@@ -1,5 +1,6 @@
 import * as day1 from "./day1";
 import * as day2 from "./day2";
+import * as day3 from "./day3";
 
 const day = process.argv[3];
 
@@ -16,5 +17,10 @@ switch (day) {
   case "2":
     console.log(await day2.countSafeReports());
     console.log(await day2.countSafeReportsWithToleration());
+    break;
+
+  case "3":
+    console.log(await day3.sumMultiplications());
+    console.log(await day3.sumToggledMultiplications());
     break;
 }
